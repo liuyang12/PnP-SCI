@@ -94,13 +94,13 @@ The test platform is MATLAB(R) 2019b operating on Ubuntu 18.04 LTS (x64) with an
 ## Citation
 ```
 @inproceedings{Yuan20PnPSCI,
-   author  = {Yuan, Xin and Liu, Yang and Suo, Jinli and Dai, Qionghai},
-   title   = {Plug-and-play Algorithms for Large-scale Snapshot Compressive Imaging},
+   author    = {Yuan, Xin and Liu, Yang and Suo, Jinli and Dai, Qionghai},
+   title     = {Plug-and-play Algorithms for Large-scale Snapshot Compressive Imaging},
    booktitle = {IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR)},
    publisher = {IEEE/CVF},
-   year    = {2020},
-   arxiv   = {2003.13654},
-   type    = {Conference Proceedings}
+   year      = {2020},
+   arxiv     = {2003.13654},
+   type      = {Conference Proceedings}
 }
 ```
 
