@@ -25,7 +25,7 @@ The key challenge for SCI is the trade-off of the performance in terms of recons
 Plug-and-play approach uses image/video deniosers as priors. Therefore, it could bridge the image/video processing community and the inverse problem community directly. PnP-SCI enjoys this benefit. Figure 3 shows the trade-off of quality and speed of various plug-and-play denoising algorithms for SCI reconstruction.
 
 <p align="center">
-<img src="https://github.com/liuyang12/PnP-SCI/blob/master/results/image/pnpsci_performance_tradeoff.jpg?raw=true">
+<img src="https://github.com/liuyang12/PnP-SCI/blob/master/results/image/pnpsci_performance_tradeoff.jpg?raw=true" width="600">
 </p>
 
 Fig. 3.  Trade-off of quality (peak signal-to-noise ratio, PSNR in dB) and speed (1/runtime in 1/min) of various plug-and-play denoising algorithms for SCI reconstruction. The benchmark `Kobe` data (in grayscale) is used here for full comparison.
@@ -42,8 +42,10 @@ As we can see clearly, the deep denoiser FFDNet exhibits a better trade-off betw
 git clone https://github.com/liuyang12/PnP-SCI
 ```
 
+2. Download the large-scale dataset via [this link on Dropbox](https://www.dropbox.com/sh/6pzqxgv9aw1qqc2/AAABTmqSfTEA_i4E-p-TQJ0Sa?dl=0) and put the data in `./datasets/simdata/largescale`.
+
 ### Run PnP-SCI on benchmark video-SCI dataset
-2. Test the PnP-SCI algorithm (on `Kobe` benchmark video-SCI dataset as default) via
+3. Test the PnP-SCI algorithm (on `Kobe` benchmark video-SCI dataset as default) via
 ```matlab
 test_pnpsci
 ```
@@ -55,7 +57,7 @@ test_pnpsci('traffic')
 Note that we have decreased the number of iterations in PnP-SCI for some benchmark datasets (*e.g.*, to 5 in `Traffic` and `Crash` data, and 3 in `Aerial` data) to avoid the over-smoothing effect because of the mismatch between the estimated noise level and the real noise level for each iteration. 
 
 ### Run PnP-SCI on large-scale video-SCI dataset
-3. Test the PnP-SCI algorithm (on `Messi` large-scale video-SCI dataset as default) via
+4. Test the PnP-SCI algorithm (on `Messi` large-scale video-SCI dataset as default) via
 ```matlab
 test_pnpsci_largescale
 ```
@@ -65,7 +67,7 @@ test_pnpsci_largescale('football')
 ```
 
 ### Run full-comparison of PnP-SCI algorithms
-4. [Optional] 
+5. [Optional] 
 ```matlab
 tests/test_pnpsci_benchmark_full              % benchmark `Kobe` data
 tests/test_pnpsci_benchmark_full('traffic')   % benchmark `Traffic` data
