@@ -32,7 +32,7 @@ Fig. 3.  Trade-off of quality (peak signal-to-noise ratio, PSNR in dB) and speed
  
 As we can see clearly, the deep denoiser FFDNet exhibits a better trade-off between the reconstruction quality and the speed. Therefore, PnP-FFDNet can be used as an *efficient baseline* in SCI reconstruction.
 
-*Code for the video-SCI data from real systems would be available sooner.*
+*Code for the video-SCI data from real systems would be available sooner.* Please refer to the readme file in the `dataset` folder for the original source(s) of both simulated and real data.
 
 ## Usage
 ### Download the PnP-SCI repository
@@ -84,7 +84,7 @@ tests/test_pnpsci_largescale_full('football') % large-scale `Football` datat
 | `algorithms` | MATLAB functions of main algorithms proposed in the paper (original) | 
 | `tests`    | MATLAB scripts to reproduce the results in the paper (original) |
 | `packages`   | algorithms adapted from the state-of-art algorithms (adapted)|
-| `dataset`    | data used for reconstruction (simulated) |
+| `dataset`    | data used for reconstruction (simulated and real data, refer to the readme file for details) |
 | `results`    | results of reconstruction (after reconstruction) |
 | `utils`      | utility functions |
 
